@@ -1,9 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <title>Template</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="bg-mid"></div>
+    <header>
+      <div class="logo"></div>
+      <div class="small">
+        <div class="big">
+          <div class="contacts">
+            <div class="contacts-item">
+              <div class="contacts-label">
+                <div class="contacts-label-icon pin"></div>
+                Адрес:
+              </div>
+              <div class="contacts-text">
+                Москва, ул. Шарикоподшипниковская, дом 11, строение 7, офис 451
+              </div>
+            </div>
+            <div class="contacts-item">
+              <div class="contacts-label">
+                <div class="contacts-label-icon mail"></div>
+                Email:
+              </div>
+              <div class="contacts-text">domofon-sn@ya.ru</div>
+            </div>
+            <div class="separator"></div>
+          </div>
+          <div class="messengers">
+            <a class="tg" href="#" target="_blank"></a>
+            <a class="ws" href="#" target="_blank"></a>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="phone-wrap">
+            <div class="phone-label">Свяжитесь с нами:</div>
+            <a href="tel:+7 495 476-54-87">+7 495 476-54-87</a>
+          </div>
+        </div>
+        <button onclick="document.body.className += ' callback-opened'">
+          <span>Обратный звонок</span>
+        </button>
+      </div>
+      <div
+        class="menu"
+        onclick='document.body.className += "menu-opened"'
+      ></div>
+    </header>
+    <div class="content">
+      <div class="thankyou">
+        <div class="thankyou-title"><b>Спасибо</b><br />за вашу заявку</div>
+        <div class="thankyou-text">
+          Мы свяжемся с вами<br />в ближайшее время
+        </div>
+      </div>
+      <div class="title">
+        <b>Установка видеодомофонов</b> в Москве под ключ
+        <i>за 1 день</i> с гарантией 24 мес
+      </div>
+      <div class="form-description">
+        <div class="form-description-title">
+          Заполните <b>форму</b> <span class="bottom">ниже</span
+          ><span class="right">справа</span>
+        </div>
+        <div class="form-description-text">
+          Наши специалисты рассчитают стоимость и ответят на все вопросы
+        </div>
+      </div>
+      <form
+        class="callback-form"
+        onsubmit="document.body.className = 'thankyou-visible';return false"
+      >
+        <div class="callback-form-title">
+          <b>Оставьте заявку</b> на консультацию сейчас!
+        </div>
+        <div class="callback-form-input">
+          <div class="callback-form-input-icon"></div>
+          <input type="text" required placeholder="Введите номер телефона" />
+        </div>
+        <button type="submit">
+          Получить консультацию
+          <div class="icon"></div>
+        </button>
+        <div class="callback-form-footer">
+          Нажимая на кнопку, Вы соглашаетесь с <a href="#"
+            >Политикой конфиденциальности</a
+          >
+        </div>
+        <div class="callback-form-arrow"></div>
+      </form>
+      <div class="keypoints">
+        <div class="keypoints-item">
+          <div class="keypoints-item-title">18 лет на рынке</div>
+          <div class="keypoints-item-description">Работаем с 2006 г</div>
+        </div>
+        <div class="keypoints-item">
+          <div class="keypoints-item-title">Готовые комплекты</div>
+          <div class="keypoints-item-description">Под любой бюджет</div>
+        </div>
+        <div class="keypoints-item">
+          <div class="keypoints-item-title">Опыт мастеров 10+ лет</div>
+          <div class="keypoints-item-description">100% качество работы</div>
+        </div>
+      </div>
+      <div class="bg"></div>
+      <div class="feedbacks">
+        <div class="feedbacks-title">Отзывы клиентов</div>
+        <div class="feedbacks-items">
+          <a
+            style="--src: url(images/reviews/1.jpg)"
+            class="feedbacks-item"
+            href="#"
+          ></a>
+          <a
+            style="--src: url(images/reviews/2.jpg)"
+            class="feedbacks-item"
+            href="#"
+          ></a>
+          <a
+            style="--src: url(images/reviews/3.jpg)"
+            class="feedbacks-item"
+            href="#"
+          ></a>
+          <a
+            style="--src: url(images/reviews/4.jpg)"
+            class="feedbacks-item"
+            href="#"
+          ></a>
+          <a
+            style="--src: url(images/reviews/5.jpg)"
+            class="feedbacks-item"
+            href="#"
+          ></a>
+          <a
+            style="--src: url(images/reviews/6.jpg)"
+            class="feedbacks-item"
+            href="#"
+          ></a>
+        </div>
+      </div>
+      <div class="footer-wrap">
+        <footer>
+          <div class="copy">Copyright 2006 – 2024 «StarNew»</div>
+          <div class="legal">
+            ИП Гуков А.В ИНН: 772765083030 ОГРН: 306770000433423
+          </div>
+          <div class="links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Пользовательское соглашение</a>
+          </div>
+        </footer>
+      </div>
+      <div class="intercom"></div>
+    </div>
+    <div class="menu-modal">
+      <div class="menu-modal-header">
+        <div class="menu-modal-logo"></div>
+        <div
+          class="menu-modal-close"
+          onclick="document.body.className = document.body.className.replace('menu-opened', '')"
+        ></div>
+      </div>
+      <div class="contacts">
+        <div class="contacts-item">
+          <div class="contacts-label">
+            <div class="contacts-label-icon pin"></div>
+            Адрес:
+          </div>
+          <div class="contacts-text">
+            Москва, ул. Шарикоподшипниковская, дом 11, строение 7, офис 451
+          </div>
+        </div>
+        <div class="contacts-item">
+          <div class="contacts-label">
+            <div class="contacts-label-icon mail"></div>
+            Email:
+          </div>
+          <div class="contacts-text">domofon-sn@ya.ru</div>
+        </div>
+      </div>
+      <div class="messengers">
+        <a class="tg" href="#" target="_blank"></a>
+        <a class="ws" href="#" target="_blank"></a>
+      </div>
+      <div class="separator"></div>
+      <div class="phone">
+        <div class="phone-wrap">
+          <div class="phone-label">Свяжитесь с нами:</div>
+          <a href="tel:+7 495 476-54-87">+7 495 476-54-87</a>
+        </div>
+      </div>
+      <button onclick="document.body.className += ' callback-opened'">
+        <span>Обратный звонок</span>
+      </button>
+    </div>
+    <div class="callback-modal">
+      <form
+        class="callback-form"
+        onsubmit="document.body.className = 'thankyou-visible';return false"
+      >
+        <div
+          class="menu-modal-close"
+          onclick="document.body.className = document.body.className.replace('callback-opened', '')"
+        ></div>
+        <div class="callback-form-title">
+          <b>Оставьте заявку</b> на консультацию сейчас!
+        </div>
+        <div class="callback-form-input">
+          <div class="callback-form-input-icon"></div>
+          <input type="text" required placeholder="Введите номер телефона" />
+        </div>
+        <button type="submit">
+          Получить консультацию
+          <div class="icon"></div>
+        </button>
+        <div class="callback-form-footer">
+          Нажимая на кнопку, Вы соглашаетесь с <a href="#"
+            >Политикой конфиденциальности</a
+          >
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
