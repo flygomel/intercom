@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Template</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
+    <title>
+      StarNew – Установка и монтаж видеодомофонов в квартиру и офис | Москва
+    </title>
+    <meta
+      name="description"
+      lang="ru"
+      content="Профессиональная установка и монтаж видеодомофонов для квартир, офисов и других объектов в Москве. Доступные цены, качественная работа от компании StarNew"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      function submitForm(e, type) {
+        e.preventDefault();
+        const form = e.target;
+        const phoneInput = form.elements["phone"];
+        // alert(type + " " + phoneInput.value);
+        document.body.className = "thankyou-visible";
+        ym(98727363, "reachGoal", "thankyou");
+      }
+    </script>
   </head>
   <body>
     <div class="bg-mid"></div>
@@ -58,10 +76,10 @@
           Мы свяжемся с вами<br />в ближайшее время
         </div>
       </div>
-      <div class="title">
+      <h1 class="title">
         <b>Установка видеодомофонов</b> в Москве под ключ
         <i>за 1 день</i> с гарантией 24 мес
-      </div>
+      </h1>
       <div class="form-description">
         <div class="form-description-title">
           Заполните <b>форму</b> <span class="bottom">ниже</span
@@ -71,16 +89,18 @@
           Наши специалисты рассчитают стоимость и ответят на все вопросы
         </div>
       </div>
-      <form
-        class="callback-form"
-        onsubmit="document.body.className = 'thankyou-visible';return false"
-      >
+      <form class="callback-form" onsubmit="submitForm(event, 'consult')">
         <div class="callback-form-title">
           <b>Оставьте заявку</b> на консультацию сейчас!
         </div>
         <div class="callback-form-input">
           <div class="callback-form-input-icon"></div>
-          <input type="text" required placeholder="Введите номер телефона" />
+          <input
+            type="text"
+            name="phone"
+            required
+            placeholder="Введите номер телефона"
+          />
         </div>
         <button type="submit">
           Получить консультацию
@@ -199,20 +219,25 @@
       </button>
     </div>
     <div class="callback-modal">
-      <form
-        class="callback-form"
-        onsubmit="document.body.className = 'thankyou-visible';return false"
-      >
+      <form class="callback-form" onsubmit="submitForm(event, 'callback')">
         <div
           class="menu-modal-close"
           onclick="document.body.className = document.body.className.replace('callback-opened', '')"
         ></div>
-        <div class="callback-form-title">
-          <b>Оставьте заявку</b> на консультацию сейчас!
+        <div class="callback-form-title"><b>Бесплатная</b> консультация</div>
+        <div class="callback-form-text">
+          Оставьте свой номер и наш менеджер перезвонит вам <b
+            >в течение 10 минут</b
+          >
         </div>
         <div class="callback-form-input">
           <div class="callback-form-input-icon"></div>
-          <input type="text" required placeholder="Введите номер телефона" />
+          <input
+            type="text"
+            name="phone"
+            required
+            placeholder="Введите номер телефона"
+          />
         </div>
         <button type="submit">
           Получить консультацию
@@ -225,5 +250,47 @@
         </div>
       </form>
     </div>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(98727363, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/98727363"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </body>
 </html>

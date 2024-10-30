@@ -238,6 +238,7 @@ header .small {
 .title {
   font-size: 30px;
   font-weight: 500;
+  margin: 0;
   margin-bottom: 40px;
   line-height: 120%;
 }
@@ -305,6 +306,11 @@ header .small {
 }
 .callback-form-title b {
   display: block;
+}
+.callback-form-text {
+  text-align: center;
+  line-height: 120%;
+  margin-bottom: 20px;
 }
 .callback-form-input {
   border: 1px solid var(--grey1);
@@ -735,6 +741,9 @@ body.callback-opened .callback-modal {
 }
 
 @media screen and (min-width: 768px) {
+  .callback-form-text {
+    font-size: 18px;
+  }
   .thankyou {
     max-width: 310px;
     padding: 60px 50px;
